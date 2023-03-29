@@ -8,6 +8,8 @@
     color: white;
 }
 
+
+
 nav
 {
     background-color: #C60000;
@@ -17,14 +19,14 @@ nav
     gap: 60px;
 }
 
-nav .logo
+header .logo
 {
     display: flex;
     margin-left: 15px;
     margin-bottom: 15px;
 }
 
-nav .logo img
+header .logo img
 {
     height: 100px;
     -webkit-user-drag: none;
