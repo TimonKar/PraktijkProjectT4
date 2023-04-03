@@ -20,21 +20,80 @@ html
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Styling of the navigation bar */
-#quiz-container {
-    max-width: 600px;
-    margin: 0 auto;
+/* Colors */
+:root
+{
+    --primary-color: #C60000;
+    --secondary-color: black;
+    --background-color: white;
 }
+label
+{
+    font-weight: 600;
+    margin-top: 10px;
+}
+/* Layout */
+#quiz-container
+{
+    max-width: 600px;
+    max-height: 400px;
 
-.question {
+    margin: 10vh auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+}
+.question p
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.question
+{
+
     display: none;
 }
 
-.question.active {
+.question.active
+{
     display: block;
 }
 
+
+/* Buttons */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .next-button {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.back-button {
+    margin-right: 10px;
+}
+
+/* Form */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Result */
+#result-container {
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 nav
