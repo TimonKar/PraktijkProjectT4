@@ -20,46 +20,6 @@ html
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Styling of the navigation bar */
-/* Colors */
-:root
-{
-    --primary-color: #C60000;
-    --secondary-color: black;
-    --background-color: white;
-}
-label
-{
-    font-weight: 600;
-    margin-top: 10px;
-}
-/* Layout */
-#quiz-container
-{
-    max-width: 600px;
-    max-height: 400px;
-
-    margin: 10vh auto;
-    background-color: var(--background-color);
-    padding: 20px;
-    border: 3px solid var(--primary-color);
-    border-radius: 5px;
-}
-.question p
-{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-}
-.question
-{
-
-    display: none;
-}
-
-.question.active
-{
-    display: block;
-}
 
 
 /* Buttons */
