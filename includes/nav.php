@@ -11,8 +11,8 @@
                 </section>
                 <section class="nav-items">
                   <ul>
-                    <li><a href="/Praktijk/Thema3Project/index.php"> Home</a></li>
-                    <li><a href=/Praktijk/Thema3Project/pages/guitartest.php>Guitar Test</a></li>
+                    <li><a href="/Praktijk/Thema3Praktijk/Project/index.php"> Home</a></li>
+                    <li><a href="/Praktijk/Thema3Praktijk/Project/pages/guitartest.php">Guitar Test</a></li>
                     <li><a href="#">About Us</a></li>
                   </ul>
                 </section>

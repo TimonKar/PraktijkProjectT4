@@ -22,19 +22,46 @@
     <?php
     include "../includes/nav.php"
     ?>
-
-        <main>
-            <div class="guitartest-main">
-                <h2>The Guitar Test</h2>
-
-                <p>
-                    Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas.
-                </p>
-
-                <button>
-                    Start Now
-                </button>
+    <div id="quiz-container">
+        <form id="quiz-form" method="post">
+            <div id="question-1" class="question active">
+                <p>Question 1: What is your skill level?</p>
+                <label><input type="radio" name="q1" value="beginner"> Beginner</label><br>
+                <label><input type="radio" name="q1" value="intermediate"> Intermediate</label><br>
+                <<label><input type="radio" name="q1" value="advanced"> Advanced</label><br>
+                <button type="button" class="next-button" onclick="showQuestion('question-2')">Next</button>
             </div>
-        </main>
+
+            <div id="question-2" class="question">
+                <p>Question 2: What type of music do you play?</p>
+                <label><input type="checkbox" name="q2[]" value="rock"> Rock</label><br>
+                <label><input type="checkbox" name="q2[]" value="blues"> Blues</label><br>
+                <label><input type="checkbox" name="q2[]" value="jazz"> Jazz</label><br>
+                <button type="button" class="next-button" onclick="showQuestion('question-3')">Next</button>
+            </div>
+
+            <div id="question-3" class="question">
+                <p>Question 3: What body shape do you prefer?</p>
+                <label><input type="radio" name="q3" value="stratocaster"> Stratocaster</label><br>
+                <label><input type="radio" name="q3" value="lespaul"> Les Paul</label><br>
+                <label><input type="radio" name="q3" value="telecaster"> Telecaster</label><br>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div id="result-container"></div>
+    </div>
+
+    <script>
+        function showQuestion(questionId) {
+            // Hide the current question
+            var currentQuestion = document.querySelector('.question.active');
+            currentQuestion.classList.remove('active');
+
+            // Show the next question
+            var nextQuestion = document.getElementById(questionId);
+            nextQuestion.classList.add('active');
+        }
+    </script>
     </body>
-</html>
+    </html>

@@ -20,6 +20,22 @@ html
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Styling of the navigation bar */
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
+.next-button {
+    margin-top: 10px;
+}
 
 nav
 {
