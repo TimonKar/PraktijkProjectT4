@@ -22,3 +22,5 @@
 <?php
 include "../includes/nav.php"
 ?>
+</body>
+
