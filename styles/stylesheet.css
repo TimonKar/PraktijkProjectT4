@@ -191,7 +191,20 @@ main .container .box:nth-child(1) .images
 }
 main .container .box:nth-child(1) .images img
 {
-    height:120px;
+
+    height:80px;
+}
+main .container .box:nth-child(1)
+{
+    width: 400px;
+}
+main .container .box:nth-child(1) .textbox
+{
+    margin-right: 10px;
+}
+main .container .box:nth-child(1) h2
+{
+    font-size: 20px;
 }
 
 
