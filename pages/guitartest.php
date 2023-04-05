@@ -23,7 +23,7 @@
     include "../includes/nav.php"
     ?>
     <div id="quiz-container">
-        <form id="quiz-form" method="post">
+        <form id="quiz-form" method="post" action="../pages/process-form.php">
             <div id="question-1" class="question active">
                 <p>Question 1: What is your level of experience playing guitar?</p>
                 <label><input type="radio" name="q1" value="beginner"> Beginner</label><br>
