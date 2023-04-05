@@ -22,5 +22,31 @@
 <?php
 include "../includes/nav.php"
 ?>
+<?php
+
+
+// Get the answers from the form
+$q1 = $_POST['q1'];
+$q2 = $_POST['q2'];
+$q3 = $_POST['q3'];
+$q4 = $_POST['q4'];
+$q5 = $_POST['q5'];
+$q6 = $_POST['q6'];
+$q7 = $_POST['q7'];
+
+// Calculate the result based on the points for each question
+$result = 0;
+$result += $q1;
+$result += array_sum($q2);
+$result += $q3;
+$result += $q4;
+$result += $q5;
+$result += $q6;
+$result += $q7;
+
+// Display the result
+echo "Your result is: " . $result;
+?>
+
 </body>
 
