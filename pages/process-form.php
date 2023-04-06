@@ -40,13 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Assign a word based on the total points
     if ($result >= 70) {
-        $word = "<h3 Fender </h3>";
+        $word = "<h3> Fender </h3>" . "<section class='containerTest'><section class='box'> <section class='image-result'><img src=../images/fender.jpg> </section></section></section></section>";
     } else if ($result >= 0) {
-        $word = "<h3> Fazly </h3>";
+        $word = "<h3> Fazley </h3>" . "<section class='containerTest'> <section class='box'> <section class='image-result'><img src=../images/fazley.jpg> </section></section></section>";
     } else if ($result >= 3300) {
-        $word = "<h3> Acoustic </h3>";
+        $word = "<h3> Acoustic </h3>" . "<section class='containerTest'> <section class='box'> <section class='image-result'><img src=../images/acoustic.jpg> </section></section></section>";
     } else {
-        $word = "<h3> Fender </h3> ";
+        $word = "<h3> Telecaster </h3> " . "<section class='containerTest'> <section class='box'> <section class='image-result'><img src=../images/telecaster.jpg> </section></section></section>";
     }
 
     // Display the result

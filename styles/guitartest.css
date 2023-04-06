@@ -52,3 +52,28 @@ h3
     text-align: center;
     font-size: 30px;
 }
+.image-result
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.image-result img
+{
+
+    height: 250px;
+}
+.containerTest .box
+{
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+}
+
+.containerTest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

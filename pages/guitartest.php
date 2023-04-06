@@ -27,19 +27,19 @@ include "../includes/nav.php"
         <div id="question-1" class="question active">
             <p>Question 1: What is your level of experience playing guitar?</p>
             <label><input type="radio" name="q1" value="1"> Beginner</label><br>
-            <label><input type="radio" name="q1" value="2"> Intermediate</label><br>
-            <label><input type="radio" name="q1" value="3"> Advanced</label><br>
-            <label><input type="radio" name="q1" value="100"> Professional</label><br>
+            <label><input type="radio" name="q1" value="1"> Intermediate</label><br>
+            <label><input type="radio" name="q1" value="1"> Advanced</label><br>
+            <label><input type="radio" name="q1" value="1"> Professional</label><br>
             <button type="button" class="next-button" onclick="showQuestion('question-2')">Next</button>
         </div>
 
         <div id="question-2" class="question">
             <p>Question 2: Which genre of music do you most enjoy playing?</p>
-            <label><input type="checkbox" name="q2[]" value="3"> Rock</label><br>
-            <label><input type="checkbox" name="q2[]" value="3"> Blues</label><br>
-            <label><input type="checkbox" name="q2[]" value="3"> Jazz</label><br>
-            <label><input type="checkbox" name="q2[]" value="3"> Country</label><br>
-            <label><input type="checkbox" name="q2[]" value="3"> Pop</label><br>
+            <label><input type="checkbox" name="q2[]" value="1"> Rock</label><br>
+            <label><input type="checkbox" name="q2[]" value="1"> Blues</label><br>
+            <label><input type="checkbox" name="q2[]" value="1"> Jazz</label><br>
+            <label><input type="checkbox" name="q2[]" value="1"> Country</label><br>
+            <label><input type="checkbox" name="q2[]" value="1"> Pop</label><br>
 
             <button type="button" class="back-button" onclick="previousQuestion()">Back</button>
             <button type="button" class="next-button" onclick="showQuestion('question-3')">Next</button>
@@ -47,10 +47,10 @@ include "../includes/nav.php"
 
         <div id="question-3" class="question">
             <p>Question 3: What is your preferred playing style?</p>
-            <label><input type="radio" name="q3" value="1000"> Fingerpicking</label><br>
-            <label><input type="radio" name="q3" value="150"> Strumming</label><br>
-            <label><input type="radio" name="q3" value="1000"> Hybrid (fingerpicking and strumming)</label><br>
-            <label><input type="radio" name="q3" value="3"> Lead (playing solos)</label><br>
+            <label><input type="radio" name="q3" value="1"> Fingerpicking</label><br>
+            <label><input type="radio" name="q3" value="1"> Strumming</label><br>
+            <label><input type="radio" name="q3" value="1"> Hybrid (fingerpicking and strumming)</label><br>
+            <label><input type="radio" name="q3" value="1"> Lead (playing solos)</label><br>
 
             <button type="button" class="back-button" onclick="previousQuestion()">Back</button>
             <button type="button" class="next-button" onclick="showQuestion('question-4')">Next</button>
@@ -60,7 +60,6 @@ include "../includes/nav.php"
             <p>Question 4: Which type of guitar do you prefer?</p>
             <label><input type="radio" name="q4" value="1000"> Acoustic</label><br>
             <label><input type="radio" name="q4" value="1"> Electric</label><br>
-            <label><input type="radio" name="q4" value="10000"> Classical</label><br>
 
             <button type="button" class="back-button" onclick="previousQuestion()">Back</button>
             <button type="button" class="next-button" onclick="showQuestion('question-5')">Next</button>
@@ -151,9 +150,9 @@ include "../includes/nav.php"
         <div id="question-12" class="question">
             <p>Question 12: What is your budget for a guitar?</p>
             <label><input type="radio" name="q12" value="1"> Under $500</label><br>
-            <label><input type="radio" name="q12" value="1000">$500-$1000</label><br>
-            <label><input type="radio" name="q12" value="2000">$1000-$2000</label><br>
-            <label><input type="radio" name="q12" value="3000"> Over $2000</label><br>
+            <label><input type="radio" name="q12" value="1">$500-$1000</label><br>
+            <label><input type="radio" name="q12" value="1">$1000-$2000</label><br>
+            <label><input type="radio" name="q12" value="1"> Over $2000</label><br>
             <button type="button" class="back-button" onclick="previousQuestion()">Back</button>
             <button type="button" class="next-button" onclick="showQuestion('question-13')">Next</button>
         </div>
